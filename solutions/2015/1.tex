@@ -1,0 +1,17 @@
+
+Let the abbreviations LE and LIE denote linearity of expectations and law of iterated expectations respectively.
+\begin{align}
+Var [Y] &= E[Y^2] -[E(Y)]^2\text{  (definition)  }\\
+        &= E[E(Y^2 | X )] - (E[E(Y | X)])^2\text{  (LIE)  }
+\end{align}
+\begin{multline}
+    =E[E(Y^2 | X )] - (E[E(Y | X)])^2\\-E([E(Y | X)]^2) + E([E(Y | X)]^2)
+\end{multline}
+\begin{multline}
+        =E[E(Y^2 | X )] - E([E(Y | X)]^2) \\ + E([E(Y | X)]^2) - (E[E(Y | X)])^2\text{  (LE {\&} LIE)  }
+\end{multline}
+\begin{align}
+        &= Var [E(Y | X)] + E[Var (Y | X)]\text{  (definition)  }
+\end{align}
+\bigskip
+\rightline{Hence, proved.}

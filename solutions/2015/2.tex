@@ -1,0 +1,30 @@
+Let X be a random variable with finite expected value $E[X]$ and finite non-zero variance $\sigma^2$. Then for any real number k $>$ 0,
+\begin{equation*}
+\tag{1} \label{ies2015-2:chebyshev}
+    \pr{\lvert X - E[X] \rvert \ge k\sigma} \le \frac{1}{k^{2}}
+\end{equation*}
+computing the variance,
+\begin{align*}
+    \sigma^{2} &= E[X^2] - E[X]^2 \\
+    \tag{2}
+    \implies \sigma^{2} &= 13 - 9 = 4 \\
+    \tag{3} \label{ies2015-2:sigma}
+    \sigma &= 2
+\end{align*}
+using \eqref{ies2015-2:sigma},
+\begin{align*}\
+\tag{4} \label{ies2015-2:final}
+    \pr{-2 < X < 8} &= 1 - \pr{\lvert X - 3 \rvert > 5} \\
+    \tag{5} \label{ies2015-2:main}
+    \pr{\lvert X - 3 \rvert > 5} &= \pr{\lvert X - E[X] \rvert > k\sigma} \\
+    k\sigma &= 5 \\
+    \implies 2k &= 5 \\
+    \tag{6} \label{ies2015-2:k}
+    \therefore k &= \frac{5}{2}
+\end{align*}
+Using \eqref{ies2015-2:chebyshev} , \eqref{ies2015-2:main} and \eqref{ies2015-2:k} in \eqref{ies2015-2:final},
+\begin{align*}
+    \pr{-2 < X < 8} &\ge 1 - \brak{\frac{2}{5}}^2 \\
+    \tag{7} \label{ies2015-2:result}
+\implies \pr{-2 < X < 8} &\ge \frac{21}{25}
+\end{align*}

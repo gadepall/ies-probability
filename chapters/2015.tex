@@ -1,0 +1,29 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+%
+
+
+\item For random variables X and Y, show that:
+$Var[Y] = E[Var(Y|X)] + Var[E(Y|X)]$
+%
+\solution
+\input{solutions/2015/1.tex}
+%
+\item Let X be a Random Variable with $E[X] = 3$, $E[X^2] = 13$. Use Chebyshev's Inequality to obtain $\pr{-2 < X < 8}$
+%
+\\
+\solution
+\input{solutions/2015/2.tex}
+%
+\item  Three points are chosen on the line of unit length.Find the probability that each the 3 line segments have length greater than $\dfrac{1}{4}$.
+\\
+\solution
+\input{solutions/2015/3/Assignment7.tex}
+
+
+\end{enumerate}

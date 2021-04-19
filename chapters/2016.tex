@@ -1,0 +1,33 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+%
+\item Let the random variable X have the distribution $P(X=0)=P(X=3)=p$, $P(X=1)=1-3p$ for $0{\leq}p{\leq}\frac{1}{2}$. What is the maximum value of V(X)?
+\begin{enumerate}[label=\Alph*)]
+    \item 3
+    \item 4
+    \item 5
+    \item 6
+    \item none
+\end{enumerate}
+%
+\solution
+\input{solutions/2016/7.tex}
+%
+\item $X_1$ and $X_2$ are independent Poisson variables such that $\pr{X_1=2} = \pr{X_1=1}$ and $\pr{X_2=2} = \pr{X_2=3}$. What is the variance of $(X_1 - 2X_2)$ ?
+\begin{enumerate}
+    \item 14
+    \item 4
+    \item 3
+    \item 2
+\end{enumerate}
+%
+\solution
+\input{solutions/2016/4.tex}
+
+\end{enumerate}
+
