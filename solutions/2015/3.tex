@@ -1,0 +1,20 @@
+let us choose points X,Y on a line ,since we are picking points randomly they have a uniform distribution in \brak{0,1}.\\
+let us take two random variables X,Y.
+This points divide in into segments $X,Y-X,1-X$
+From question
+\begin{align}
+X > \frac{1}{4}\\
+Y-X> \frac{1}{4}\\
+1-X< 1/4
+\end{align}
+$\binom{2}{1}\times\pr{X+\frac{1}{4}< Y < \frac{3}{4},\frac{1}{4}<X<\frac{1}{2} }$ is the required answer since
+ given random variables  X,Y are interchangable.
+\begin{align}
+    \pr{X+\frac{1}{4}< Y < \frac{3}{4},\frac{1}{4}<X<\frac{1}{2}}\\= \int_{X=\frac{1}{4}}^{X=\frac{1}{2}}\int_{Y=X+\frac{1}{4}}^{Y=\frac{3}{4}}dY dX
+    \\=\int_{X=\frac{1}{4}}^{X=\frac{1}{2}}\brak{\frac{1}{2}-X}dX
+    \\=\brak{\frac{X}{2}- X^{2}}\bigg|_{\frac{1}{4}}^{\frac{1}{2}}
+    \\=\frac{1}{8}-\frac{1}{8}+\frac{1}{32}
+    \\=\frac{1}{32}
+\end{align}
+So,req answer is $$2\times\pr{X+\frac{1}{4}< Y < \frac{3}{4},\frac{1}{4}<X<\frac{1}{2} }=\frac{1}{16}$$
+  \textbf{Ans is} $\frac{1}{16}$

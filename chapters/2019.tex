@@ -1,28 +1,39 @@
-% \renewcommand{\theequation}{\theenumi}
-% \renewcommand{\thefigure}{\theenumi}
-% \renewcommand{\thetable}{\theenumi}
-% \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
-% \numberwithin{equation}{enumi}
-% \numberwithin{figure}{enumi}
-% \numberwithin{table}{enumi}
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item Let $X$ be a Poisson random variable with p.m.f
+\begin{align}
+\label{eq:1}
+P(X=k) = 
+    \begin{cases} 
+      \frac{e^{-\lambda}\lambda^{k}}{k!},& k=0,1,2,...;  \lambda > 0\\
+      0 & \text{otherwise}
+   \end{cases}
+\end{align}
+If $Y = X^2 + 3$, then what is $P(Y=y)$ equal to?
+\begin{enumerate}[label={(\Alph*)}]
+    \item $\frac{e^{-\lambda}\lambda^{\sqrt{y-3}}}{\sqrt{\brak{y-3}}!}$, for $y =$ \cbrak{3,4,7,12,...}
+    \item $\frac{e^{-\lambda}\lambda^{-\sqrt{y-3}}}{\sqrt{\brak{3-y}}!}$, for $y =$ \cbrak{3,4,7,12,...}
+    \item $\frac{e^{-\lambda}\lambda^{\sqrt{3-y}}}{\sqrt{\brak{3-y}}!}$, for $y =$ \cbrak{4,7,12,...}
+    \item $\frac{e^{-\lambda}\lambda^{-\sqrt{3-y}}}{\sqrt{\brak{3-y}}!}$, for $y =$ \cbrak{4,7,12,...}
+\end{enumerate}
 %
-% \item Let $X$ be a Poisson random variable with p.m.f
-% \begin{align}
-% \label{eq:1}
-% P(X=k) = 
-%     \begin{cases} 
-%       \frac{e^{-\lambda}\lambda^{k}}{k!},& k=0,1,2,...;  \lambda > 0\\
-%       0 & \text{otherwise}
-%    \end{cases}
-% \end{align}
-% If $Y = X^2 + 3$, then what is $P(Y=y)$ equal to?
-% \begin{enumerate}[label={(\Alph*)}]
-%     \item $\frac{e^{-\lambda}\lambda^{\sqrt{y-3}}}{\sqrt{\brak{y-3}}!}$, for $y =$ \cbrak{3,4,7,12,...}
-%     \item $\frac{e^{-\lambda}\lambda^{-\sqrt{y-3}}}{\sqrt{\brak{3-y}}!}$, for $y =$ \cbrak{3,4,7,12,...}
-%     \item $\frac{e^{-\lambda}\lambda^{\sqrt{3-y}}}{\sqrt{\brak{3-y}}!}$, for $y =$ \cbrak{4,7,12,...}
-%     \item $\frac{e^{-\lambda}\lambda^{-\sqrt{3-y}}}{\sqrt{\brak{3-y}}!}$, for $y =$ \cbrak{4,7,12,...}
-% \end{enumerate}
-% %
-% \solution
-% \input{solutions/2019/16.tex}
-% \end{enumerate}
+\solution
+%\input{solutions/2019/16.tex}
+%
+\item Two cannons $A_{1}$ and $A_{2}$ fire at the same target. Cannon $A_{1}$ fires on an average 9 projectiles in the time in which cannon $A_{2}$ fire 10 projectiles.But on an average 7 out of 10 projectiles from cannon $A_{1}$ and 6 out of 10 projectiles from cannon $A_{2}$ strike the target. If in the course of shooting, the target is struck by one projectile, then the probability that it is struck by projectile from cannon $A_{1}$ is 
+\begin{enumerate}
+   \item  $\frac{20}{41}$\\
+   \item  $\frac{21}{41}$ \\ 
+   \item  $\frac{6}{19}$ \\
+   \item  $\frac{63}{190}$ \\ 
+\end{enumerate}
+%
+\solution
+\input{solutions/2019/12.tex}
+\end{enumerate}

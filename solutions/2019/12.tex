@@ -1,0 +1,46 @@
+\begin{table}[h!]
+    \centering
+    \caption{Listing of events }
+    \label{2019/12/table:1}
+    \begin{tabular}{|c|c|}
+        \hline
+        S & {\small event that the target is struck by a projectile}\\[0.5ex]
+        \hline
+        $A_{1}$ & {\small event that cannon $A_{1}$ fires a projectile}\\[0.5ex]
+        \hline
+        $A_{2}$ & {\small event that cannon $A_{2}$ fires a projectile}\\[0.5ex]
+        \hline
+    \end{tabular}
+    \end{table}
+    We need to calculate the conditional probability $\pr{A_{1}|S}$.\\
+    By Bayes' Theorem, we get 
+    \begin{align}
+    \label{2019/12/eq:1}
+    \pr{A_{1}|S}=\frac{\pr{S|A_{1}}\pr{A_{1}}}{\pr{S|A_{1}}\pr{A_{1}}+\pr{S|A_{2}}\pr{A_{2}}}
+    \end{align}
+    In \eqref{2019/12/eq:1},\\
+     $\pr{S|A_{i}}$ represents the conditional probability of cannon $A_{i}$ striking the target.\\
+    Given,
+    \begin{table}[h!]
+    \centering
+    \label{2019/12/table:2}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        E & $A_{1}$ & $A_{2}$\\
+        \hline
+        $\pr{E}$ & $\frac{9}{19}$ & $\frac{10}{19}$\\[1ex]
+        \hline
+    \end{tabular}
+    \end{table}
+    Also,
+    \begin{align}
+    \pr{S|A_{1}}=\frac{7}{10}\\
+    \pr{S|A_{2}}=\frac{6}{10}\\
+    \end{align}
+    Substituting the values in \eqref{2019/12/eq:1}, we get
+    \begin{align}
+    \pr{A_{1}|S}={}&\frac{\frac{7}{10}\frac{9}{19}}{\frac{7}{10}\frac{9}{19}+\frac{6}{10}\frac{10}{19}}\\
+    ={}&\frac{63}{63+60}\\
+    ={}&\frac{21}{41}
+    \end{align}
+     Therefore, option 2 is correct.
