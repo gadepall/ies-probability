@@ -1,0 +1,56 @@
+
+\begin{definition}
+Let a discrete rv $X$ having poission distribution , then \textbf{PMF} is given by
+\begin{align}
+    f(k;\lambda) = \pr{X = k} = \frac{\lambda^k e^{-\lambda}}{k!}
+\end{align}
+Let $X_1$,$X_2$,$X_3$......$X_n$ be the i.i.d rv  with $X_i$ $\sim$ Pois(1). 
+\begin{align}
+    E(X_i) = \mu = \lambda = 1\\
+    var(X_i) = \sigma^2 = \lambda = 1\\
+\end{align}
+Let a random variable,
+\begin{align}
+    X = X_1 + X_2 + ...... + X_n\\
+\implies X \sim Pois(n) 
+\end{align}
+\end{definition}
+
+\begin{theorem}[Classical central limit theorem]
+Let $X_n$ be a sequence of independent, identically distributed (i.i.d.) random variables. Assume each X has finite mean, E(X) = $\mu$, and finite variance, Var(X) = $\sigma^2$. Let $Z_n$ be the normalized average of the first n random variables.
+\begin{equation}
+     Z_n = \frac{X - n \mu}{\sqrt{n \sigma^2}}
+\end{equation}
+ then $Z_n$ converges in distribution to a standard normal distribution
+\end{theorem}
+For X 
+\begin{align}
+    \lambda = n \\
+    \pr{X = k} = \frac{n^k e^{-n}}{k!}
+\end{align}
+\begin{corollary}
+By theorem , $Z_n$ converges to standard normal distribution as n goes to infinity i.e CDF of $Z_n$ converges to CDF of standard normal distribution.
+\begin{align}
+    \pr{Z_n \leq x} \xrightarrow{ n \rightarrow \infty} = \Phi(x) \label{poisson/1/eq:1}
+\end{align}
+\end{corollary}
+\begin{proof}
+\begin{align}
+\implies e^{-n} \sum_{k=0}^{n} \frac{n^k}{k!} & = \sum_{k = 0}^{n} e^{-n}  \frac{n^k}{k!} \\
+& = \sum_{k = 0}^{n} \pr{X=k} \\
+& = \pr{X \leq n} \\
+& = \pr{ \frac{X - n \mu}{\sqrt{n \sigma^2}} \leq \frac{n - n \mu}{\sqrt{n \sigma^2}}} \\
+& = \pr{Z_n \leq 0}
+\end{align}
+Using \eqref{poisson/1/eq:1},
+\begin{align}
+\pr{ Z_n \leq 0} \xrightarrow{n \rightarrow \infty} \Phi(0)
+ = \frac{1}{2}
+\end{align}
+\end{proof}
+
+% \begin{figure}
+%     \includegraphics[width = \linewidth]{p5.png}
+%     \label{poisson/1/fig:1}
+% \end{figure}
+

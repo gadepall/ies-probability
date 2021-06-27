@@ -1,0 +1,16 @@
+\renewcommand{\theequation}{\theenumi}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+
+\item Using Central Limit theorem, show that
+\begin{align}
+   e^{-n} \sum_{k=0}^{n} \frac{n^k}{k!}   = \frac{1}{2}
+\end{align}
+\solution
+\input{poisson/solutions/1/main.tex}
+
+\end{enumerate}
